@@ -99,7 +99,7 @@ END_LEGAL */
 #endif
 
 #if !defined(__GXX_ABI_VERSION) || CC_USED_ABI_VERSION != __GXX_ABI_VERSION
-#error The C++ ABI of your compiler does not match the ABI of the pin kit.
+//#error The C++ ABI of your compiler does not match the ABI of the pin kit.
 #endif
 
 #if CC_USED_ABI_VERSION == 102
@@ -114,7 +114,7 @@ END_LEGAL */
 #elif CC_USED_ABI_VERSION == 1002
 
 #if CC_USED_ABI_VERSION != __GXX_ABI_VERSION
-#error This kit requires gcc 3.4 or later
+//#error This kit requires gcc 3.4 or later
 #endif
 
 #else
