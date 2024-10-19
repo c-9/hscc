@@ -1,7 +1,8 @@
 #!/bin/bash
 ZSIMPATH=$(pwd)
-PINPATH=$ZSIMPATH/pin_kit
-NVMAINPATH=$ZSIMPATH/nvmain
+PINPATH=$ZSIMPATH/lib/pin_2.14
+NVMAINPATH=$ZSIMPATH/lib/nvmain
+BOOST=$ZSIMPATH/lib/boost_1_59_0
 #LIBCONFIGPATH=$ZSIMPATH/lib/libconfig
 NUMCPUS=$(grep -c ^processor /proc/cpuinfo)
 
@@ -14,10 +15,12 @@ then
 	#cd -
 	export PINPATH
 	export NVMAINPATH
+	export BOOST
 	scons -c
 else
 	echo "Cleaning Zsim ..."
 	export PINPATH
 	export NVMAINPATH
+	export BOOST
 	scons -c
 fi
