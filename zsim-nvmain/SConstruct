@@ -36,8 +36,8 @@ def buildSim(cppFlags, dir, type, pgo=None):
     #env['CXX'] = 'g++ -flto -flto-report -fuse-linker-plugin'
     #env['CC'] = 'gcc -flto'
     #env["LINKFLAGS"] = " -O3 -finline "
-    env['CXX'] ='g++'
-    env['CC'] = 'g++'
+    env['CXX'] ='g++-4.8'
+    env['CC'] = 'g++-4.8'
     if useIcc:
         env['CC'] = 'icc'
         env['CXX'] = 'icpc -ipo'
@@ -212,13 +212,13 @@ def buildSim(cppFlags, dir, type, pgo=None):
         env["CPPFLAGS"] += ' -DZSIM_PATH="' + joinpath(ROOT,"bin/libzsim.so") + '" '
 
     # Boost regex
-    #BOOST = os.environ["BOOST"]
-    #include_path = os.environ['BOOST']+"/include"
-    #lib_path = os.environ['BOOST']+"/lib"
-    #env["CPPPATH"] += [include_path]
-    #env["LIBPATH"] += [lib_path]
-    #env["LIBS"] += ["boost_regex"]
-    #print(("env[cpppath]%s" % env["CPPPATH"]))
+    BOOST = os.environ["BOOST"]
+    include_path = os.environ['BOOST']+"/include"
+    lib_path = os.environ['BOOST']+"/lib"
+    env["CPPPATH"] += [include_path]
+    env["LIBPATH"] += [lib_path]
+    env["LIBS"] += ["boost_regex"]
+    print(("env[cpppath]%s" % env["CPPPATH"]))
 
     # Do PGO?
     if pgo == "generate":
