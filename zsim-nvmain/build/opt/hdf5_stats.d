@@ -18,14 +18,17 @@ build/opt/hdf5_stats.os: build/opt/hdf5_stats.cpp \
  /usr/include/hdf5/serial/H5Gpublic.h \
  /usr/include/hdf5/serial/H5MMpublic.h \
  /usr/include/hdf5/serial/H5Ppublic.h \
+ /usr/include/hdf5/serial/H5Spublic.h \
  /usr/include/hdf5/serial/H5Zpublic.h \
  /usr/include/hdf5/serial/H5PLpublic.h \
- /usr/include/hdf5/serial/H5Rpublic.h \
- /usr/include/hdf5/serial/H5Spublic.h /usr/include/hdf5/serial/H5FDcore.h \
+ /usr/include/hdf5/serial/H5Rpublic.h /usr/include/hdf5/serial/H5FDcore.h \
  /usr/include/hdf5/serial/H5FDdirect.h \
- /usr/include/hdf5/serial/H5FDfamily.h /usr/include/hdf5/serial/H5FDlog.h \
- /usr/include/hdf5/serial/H5FDmpi.h /usr/include/hdf5/serial/H5FDmpio.h \
- /usr/include/hdf5/serial/H5FDmulti.h /usr/include/hdf5/serial/H5FDsec2.h \
+ /usr/include/hdf5/serial/H5FDfamily.h \
+ /usr/include/hdf5/serial/H5FDhdfs.h /usr/include/hdf5/serial/H5FDlog.h \
+ /usr/include/hdf5/serial/H5FDmirror.h /usr/include/hdf5/serial/H5FDmpi.h \
+ /usr/include/hdf5/serial/H5FDmpio.h /usr/include/hdf5/serial/H5FDmulti.h \
+ /usr/include/hdf5/serial/H5FDros3.h /usr/include/hdf5/serial/H5FDsec2.h \
+ /usr/include/hdf5/serial/H5FDsplitter.h \
  /usr/include/hdf5/serial/H5FDstdio.h /usr/include/hdf5/serial/hdf5_hl.h \
  /usr/include/hdf5/serial/hdf5.h /usr/include/hdf5/serial/H5DOpublic.h \
  /usr/include/hdf5/serial/H5DSpublic.h \
