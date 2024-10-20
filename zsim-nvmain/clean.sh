@@ -17,10 +17,12 @@ then
 	export NVMAINPATH
 	export BOOST
 	scons -c
+	rm -rf build/ bin/
 else
 	echo "Cleaning Zsim ..."
 	export PINPATH
 	export NVMAINPATH
 	export BOOST
 	scons -c
+	rm -rf build/ bin/
 fi
