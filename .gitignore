@@ -15,3 +15,8 @@
 **/.idea/
 **/.vscode/
 **/build/
+
+zsim-nvmain/*.h5
+zsim-nvmain/*.out
+zsim-nvmain/.sconsign.dblite
+zsim-nvmain/heartbeat
